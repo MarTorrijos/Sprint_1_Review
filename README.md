@@ -1,6 +1,6 @@
 # Sprint 1 Review
 
-Collection of Exercises to Review Java Language Concepts from Sprint 1 at IT Academy
+Collection of exercises to review Java concepts from Sprint 1 at IT Academy
 
 ***
 
