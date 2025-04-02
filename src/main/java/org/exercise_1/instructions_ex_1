@@ -1,0 +1,22 @@
+Task Management System
+----------------------
+
+Create a task management system that allows users to add tasks with different priority levels (e.g., Low, Medium, High),
+mark them as completed, and categorize them (e.g., Work, Personal, Study). Use various Java features to implement this system.
+
+Requirements:
+
+    - Use Generics: Define a Task class that uses generics to store different types of information,
+    such as String for description and Date for deadlines.
+
+    - Use Collections: Store the tasks in an appropriate collection (e.g., List, Set, Map).
+    Tasks can be stored in a PriorityQueue sorted by priority.
+
+    - Use Lambdas: Implement sorting and filtering based on different criteria
+    (e.g., sorting tasks by priority, filtering completed tasks).
+
+    - Use Exception Handling: Add exception handling for invalid operations
+    (e.g., adding a task without a description, marking a task as completed when it's already completed).
+
+    - Use Annotations: Create custom annotations for certain task categories
+    (e.g., Work-related tasks could have a @Work annotation).
