@@ -7,8 +7,8 @@ build/
 ### Custom things to ignore ###
 *.iml
 .idea
-Diagram.txt
-**/src/Instrucciones_IA.txt
+Diagram
+Instrucciones_IA
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
