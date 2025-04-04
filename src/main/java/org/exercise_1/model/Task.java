@@ -2,7 +2,7 @@ package org.exercise_1.model;
 
 import java.time.LocalDateTime;
 
-public class Task<T extends Object> {
+public class Task {
 
     private String description;
     private TaskPriority taskPriority;
@@ -18,7 +18,6 @@ public class Task<T extends Object> {
         this.completed = false;
     }
 
-    // Getters and Setters
     public String getDescription() {
         return description;
     }
@@ -37,6 +36,10 @@ public class Task<T extends Object> {
 
     public boolean isCompleted() {
         return completed;
+    }
+
+    public void setTaskPriority(TaskPriority taskPriority) {
+        this.taskPriority = taskPriority;
     }
 
     // Methods

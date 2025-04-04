@@ -18,29 +18,16 @@ public class TaskManagementSystem {
             scanner.nextLine();
 
             switch (selection) {
-                case 1:
-                    tasks.addTask();
-                    break;
-                case 2:
-                    tasks.markTaskCompleted();
-                    break;
-                case 3:
-                    tasks.getTasksByPriority();
-                    break;
-                case 4:
-                    tasks.getTasksByCategory();
-                    break;
-                case 5:
-                    tasks.getPendingTasks();
-                    break;
-                case 0:
-                    System.out.println("bye");
-                default:
-                    System.out.println("Incorrect selection. Choose a number between 0 and 5");
+                case 1 -> tasks.addTask();
+                case 2 -> tasks.markTaskCompleted();
+                case 3 -> tasks.getTasksByPriority();
+                case 4 -> tasks.getTasksByCategory();
+                case 5 -> tasks.getPendingTasks();
+                case 0 -> System.out.println("Goodbye. May your tasks be easy and fulfilling");
+                default -> System.out.println("Incorrect selection. Choose a number between 0 and 5");
             }
 
         } while (selection != 0);
-
 
     }
 
