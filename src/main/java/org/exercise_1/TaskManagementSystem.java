@@ -6,11 +6,16 @@ import java.util.Scanner;
 
 public class TaskManagementSystem {
 
-    public static void main(String[] args) {
+    private static final TaskManager tasks = new TaskManager();
 
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int selection;
-        TaskManager tasks = new TaskManager();
+
+        TaskManager taskmanager = new TaskManager();
+        taskmanager.loadTasks();
+
+        taskmanager.printTasks();
 
         do {
             System.out.println(menu());
@@ -29,6 +34,7 @@ public class TaskManagementSystem {
 
         } while (selection != 0);
 
+        scanner.close();
     }
 
     public static String menu() {

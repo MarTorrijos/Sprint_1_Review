@@ -1,41 +1,40 @@
 package org.exercise_1.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.util.PriorityQueue;
 
 public class SampleTasks {
 
-    public void loadTasks() {
-
-        Task task1 = new Task("First task and it's high priority. Chop chop",
+    public static void addSampleTasks(PriorityQueue<Task> tasks) {
+        tasks.add(new Task("First task and it's high priority. Chop chop",
                 TaskPriority.HIGH,
                 TaskCategory.WORK,
-                LocalDateTime.now().plusDays(1));
+                LocalDate.now().plusDays(1)));
 
-        Task task2 = new Task("Walk the turtle",
+        tasks.add(new Task("Walk the turtle",
                 TaskPriority.LOW,
                 TaskCategory.PERSONAL,
-                LocalDateTime.now().plusDays(20));
+                LocalDate.now().plusDays(20)));
 
-        Task task3 = new Task("Finish homework :(",
+        tasks.add(new Task("Finish homework :(",
                 TaskPriority.MEDIUM,
                 TaskCategory.STUDY,
-                LocalDateTime.now().plusDays(7));
+                LocalDate.now().plusDays(7)));
 
-        Task task4 = new Task("Do the dishes. Let's pretend it's low priority",
+        tasks.add(new Task("Do the dishes. Let's pretend it's low priority",
                 TaskPriority.LOW,
                 TaskCategory.PERSONAL,
-                LocalDateTime.now().plusDays(4));
+                LocalDate.now().plusDays(4)));
 
-        Task task5 = new Task("Presentation about latest project",
+        tasks.add(new Task("Presentation about latest project",
                 TaskPriority.MEDIUM,
                 TaskCategory.WORK,
-                LocalDateTime.now().plusDays(5));
+                LocalDate.now().plusDays(5)));
 
-        Task task6 = new Task("Read about testing",
+        tasks.add(new Task("Read about testing",
                 TaskPriority.LOW,
                 TaskCategory.STUDY,
-                LocalDateTime.now().plusDays(8));
-
+                LocalDate.now().plusDays(8)));
     }
 
 }

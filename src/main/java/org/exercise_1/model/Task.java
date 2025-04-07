@@ -1,20 +1,20 @@
 package org.exercise_1.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Task {
 
-    private String description;
-    private TaskPriority taskPriority;
-    private TaskCategory taskCategory;
-    private LocalDateTime deadLine;
+    private final String description;
+    private final TaskPriority taskPriority;
+    private final TaskCategory taskCategory;
+    private final LocalDate deadline;
     private boolean completed;
 
-    public Task(String description, TaskPriority taskPriority, TaskCategory taskCategory, LocalDateTime deadLine) {
+    public Task(String description, TaskPriority taskPriority, TaskCategory taskCategory, LocalDate deadline) {
         this.description = description;
         this.taskPriority = taskPriority;
         this.taskCategory = taskCategory;
-        this.deadLine = deadLine;
+        this.deadline = deadline;
         this.completed = false;
     }
 
@@ -30,21 +30,21 @@ public class Task {
         return taskCategory;
     }
 
-    public LocalDateTime getDeadLine() {
-        return deadLine;
+    public LocalDate getDeadline() {
+        return deadline;
     }
 
-    public boolean isCompleted() {
+    public boolean getCompleted() {
         return completed;
     }
 
-    public void setTaskPriority(TaskPriority taskPriority) {
-        this.taskPriority = taskPriority;
-    }
-
-    // Methods
     public void markCompleted() {
         this.completed = true;
+    }
+
+    public String toString() {
+        return "Task description: " + description + "\nWith a priority of " + taskPriority + ", in the " + taskCategory
+                + " category and with its deadline on " + deadline + ". Completed: " + completed;
     }
 
 }
